@@ -2061,6 +2061,555 @@
         "i recommend you see a therapist who does cognitive behavioural therapy , which can help you understand the roots of your fears and learn how to manage them more successfully",
         "hello , and thank you for your question and seeking advice on this . feelings of worthlessness is unfortunately common . in fact , most people , if not all , have felt this to some degree at some point in their life . you are not alone . changing our feelings is like changing our thoughts - it ' s hard to do . our minds are so amazing that the minute you change your thought another one can be right there to take it ' s place . without your permission , another thought can just pop in there . the new thought may feel worse than the last one ! my guess is that you have tried several things to improve this on your own even before reaching out on here . people often try thinking positive thoughts , debating with their thoughts , or simply telling themselves that they need to \" snap out of it \" - which is also a thought that carries some self - criticism . some people try a different approach , and there are counselors out there that can help you with this . the idea is that instead of trying to change the thoughts , you change how you respond to them . you learn skills that allow you to manage difficult thoughts and feelings differently so they don ' t have the same impact on you that they do right now . for some people , they"
       ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Is anyone there?", "Hi there"],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I assist you?"
+      ]
+    },
+    {
+      "tag": "coping_advice",
+      "patterns": [
+        "I'm feeling overwhelmed",
+        "I need help managing stress",
+        "I'm anxious about everything",
+        "How can I cope better?",
+        "What can I do to feel less stressed?"
+      ],
+      "responses": [
+        "It's important to take time for yourself. Try practicing deep breathing exercises or meditation.",
+        "Talking to a mental health professional can be really helpful. They can offer strategies and support.",
+        "Exercise can help reduce stress and improve your mood. Consider going for a walk or engaging in a physical activity you enjoy."
+      ]
+    },
+    {
+      "tag": "personal_experience",
+      "patterns": [
+        "I have a history of trauma",
+        "I'm a survivor of abuse",
+        "I deal with insomnia",
+        "I'm recovering from addiction",
+        "I've faced many challenges"
+      ],
+      "responses": [
+        "Thank you for sharing. It's important to seek professional help to work through these experiences.",
+        "Remember, you're not alone. Support groups and counseling can offer a safe space to talk about your experiences.",
+        "Self-care and setting small, manageable goals can help you cope with the challenges you're facing. Reach out to a therapist for additional support."
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": [
+        "I don't know what to say",
+        "Can you help me?",
+        "I'm not sure how I feel",
+        "What should I do?",
+        "I'm confused"
+      ],
+      "responses": [
+        "I'm here to listen. Feel free to share what's on your mind.",
+        "It's okay to feel unsure. Talking through your thoughts can help clarify your feelings.",
+        "Consider reaching out to a mental health professional who can provide guidance and support."
+      ]
+    },
+    {
+      "tag": "trauma",
+      "patterns": [
+        "I've experienced trauma",
+        "How do I cope with trauma?",
+        "I need help with trauma",
+        "Dealing with past trauma",
+        "Can you help with trauma recovery?"
+      ],
+      "responses": [
+        "It’s important to seek support from a mental health professional if you're dealing with trauma.",
+        "Therapy, particularly trauma-focused therapy, can be very helpful in processing and healing from trauma.",
+        "Support groups and talking to trusted friends or family members can also be beneficial."
+      ]
+    },
+    {
+      "tag": "addiction",
+      "patterns": [
+        "I'm recovering from addiction",
+        "How can I stay on track with my recovery?",
+        "Dealing with addiction",
+        "Addiction recovery support",
+        "I need help with addiction"
+      ],
+      "responses": [
+        "Consider joining a support group or counseling for additional help and accountability in your recovery.",
+        "It's important to establish a strong support network and follow a structured recovery plan.",
+        "Focus on setting small, achievable goals and seek help when needed."
+      ]
+    },
+    {
+      "tag": "insomnia",
+      "patterns": [
+        "I can't sleep",
+        "Help with insomnia",
+        "I'm having trouble sleeping",
+        "Tips for better sleep",
+        "How do I handle insomnia?"
+      ],
+      "responses": [
+        "Establishing a regular sleep routine and creating a relaxing bedtime environment can help with insomnia.",
+        "Avoid caffeine and electronic screens before bed.",
+        "Consider speaking to a healthcare provider if insomnia persists."
+      ]
+    },
+    {
+      "tag": "relationship_issues",
+      "patterns": [
+        "I'm having relationship problems",
+        "How can I improve my relationship?",
+        "Dealing with relationship issues",
+        "Help with relationship troubles",
+        "What can I do about my relationship issues?"
+      ],
+      "responses": [
+        "Consider talking to a counselor or therapist who specializes in relationship issues.",
+        "Communication and setting boundaries are important in resolving relationship problems.",
+        "Seeking support from friends or support groups can also be helpful."
+      ]
+    },
+    {
+      "tag": "self_esteem",
+      "patterns": [
+        "I'm struggling with self-esteem",
+        "How can I improve my self-esteem?",
+        "I feel worthless",
+        "Help with self-esteem issues",
+        "Building self-confidence"
+      ],
+      "responses": [
+        "Focus on your strengths and accomplishments, and practice self-compassion.",
+        "Consider setting small goals and celebrating your achievements.",
+        "Talking to a therapist can help address underlying issues affecting your self-esteem."
+      ]
+    },
+    {
+      "tag": "emotional_support",
+      "patterns": [
+        "I need emotional support",
+        "Can you support me emotionally?",
+        "I'm feeling emotionally drained",
+        "Help with emotional struggles",
+        "I need someone to talk to"
+      ],
+      "responses": [
+        "I'm here to listen. Feel free to share what you're going through.",
+        "Reaching out to friends, family, or a counselor can provide additional support.",
+        "Engaging in self-care activities and practicing mindfulness can also help."
+      ]
+    },
+    {
+      "tag": "mindfulness",
+      "patterns": [
+        "What is mindfulness?",
+        "How can I practice mindfulness?",
+        "Mindfulness exercises",
+        "Benefits of mindfulness",
+        "Tips for mindfulness practice"
+      ],
+      "responses": [
+        "Mindfulness is the practice of being fully present in the moment and aware of your thoughts and feelings.",
+        "Try mindfulness exercises such as deep breathing, body scans, or mindful meditation.",
+        "Practicing mindfulness regularly can help reduce stress and improve overall well-being."
+      ]
+    },
+    {
+      "tag": "therapy",
+      "patterns": [
+        "Should I see a therapist?",
+        "What is therapy like?",
+        "How can therapy help me?",
+        "Finding a therapist",
+        "Benefits of therapy"
+      ],
+      "responses": [
+        "Therapy can provide a safe space to explore your thoughts and feelings and develop coping strategies.",
+        "Finding a qualified therapist who you feel comfortable with is important for effective therapy.",
+        "Many people find therapy helpful in managing mental health issues and improving their overall well-being."
+      ]
+    },
+    {
+      "tag": "emotional_regulation",
+      "patterns": [
+        "How can I regulate my emotions?",
+        "I struggle with emotional control",
+        "Tips for managing emotions",
+        "Help with emotional regulation",
+        "Dealing with intense emotions"
+      ],
+      "responses": [
+        "Techniques such as deep breathing, mindfulness, and cognitive restructuring can help with emotional regulation.",
+        "It’s important to identify triggers and develop healthy coping mechanisms.",
+        "Working with a therapist can also help you learn effective emotional regulation strategies."
+      ]
+    },
+    {
+      "tag": "goal_setting",
+      "patterns": [
+        "How do I set goals?",
+        "Tips for setting and achieving goals",
+        "I'm struggling with goal setting",
+        "Help with personal goals",
+        "Goal setting strategies"
+      ],
+      "responses": [
+        "Start by setting specific, measurable, achievable, relevant, and time-bound (SMART) goals.",
+        "Break down larger goals into smaller, manageable steps and track your progress.",
+        "Setting clear and realistic goals can help keep you motivated and focused."
+      ]
+    },
+    {
+      "tag": "grief",
+      "patterns": [
+        "I'm grieving",
+        "How do I cope with loss?",
+        "Dealing with grief",
+        "Help with grieving process",
+        "Support during grief"
+      ],
+      "responses": [
+        "Grieving is a natural process and it’s important to give yourself time to heal.",
+        "Talking to a counselor or support group can help you navigate the grieving process.",
+        "Allow yourself to express your emotions and remember that it's okay to seek support."
+      ]
+    },
+    {
+      "tag": "burnout",
+      "patterns": [
+        "I’m experiencing burnout",
+        "How can I recover from burnout?",
+        "Dealing with job burnout",
+        "Signs of burnout",
+        "Help with work-related burnout"
+      ],
+      "responses": [
+        "Taking breaks, setting boundaries, and practicing self-care can help with burnout.",
+        "Consider evaluating your workload and discussing your concerns with a supervisor or HR.",
+        "Seeking support from a therapist can also help address underlying issues contributing to burnout."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I lack motivation",
+        "How can I stay motivated?",
+        "Tips for increasing motivation",
+        "I'm struggling with motivation",
+        "Help with staying motivated"
+      ],
+      "responses": [
+        "Set small, achievable goals and reward yourself for reaching them.",
+        "Find activities or tasks that you are passionate about to boost motivation.",
+        "Consider developing a routine or schedule to help maintain motivation."
+      ]
+    },
+    {
+      "tag": "addiction_recovery",
+      "patterns": [
+        "I'm in recovery",
+        "How can I maintain my recovery?",
+        "Support for addiction recovery",
+        "Dealing with cravings",
+        "Help with staying sober"
+      ],
+      "responses": [
+        "Regularly attending support groups and counseling can help you stay on track with your recovery.",
+        "Develop a strong support network and engage in healthy activities to maintain your sobriety.",
+        "Focus on setting and achieving small goals to support your long-term recovery."
+      ]
+    },
+    {
+      "tag": "relapse",
+      "patterns": [
+        "I relapsed",
+        "What should I do after a relapse?",
+        "Help with dealing with a relapse",
+        "Recovery setbacks",
+        "Coping with relapse"
+      ],
+      "responses": [
+        "It's important to seek support and address the reasons behind the relapse.",
+        "Consider reaching out to a therapist or support group to discuss the relapse and develop a plan moving forward.",
+        "Remember that recovery is a journey, and setbacks are part of the process. Focus on getting back on track."
+      ]
+    },
+    {
+      "tag": "self_harm",
+      "patterns": [
+        "I'm self-harming",
+        "Help with self-harm",
+        "Dealing with self-harm urges",
+        "What should I do about self-harm?",
+        "I'm struggling with self-injury"
+      ],
+      "responses": [
+        "It's important to seek professional help immediately if you're self-harming.",
+        "Reach out to a mental health professional or counselor for support and treatment.",
+        "Consider finding healthier coping mechanisms and building a support system to address the underlying issues."
+      ]
+    },
+    {
+      "tag": "eating_disorder",
+      "patterns": [
+        "I have an eating disorder",
+        "How can I get help for an eating disorder?",
+        "Dealing with eating disorders",
+        "Help with disordered eating",
+        "I need support for my eating issues"
+      ],
+      "responses": [
+        "Seek help from a mental health professional or counselor who specializes in eating disorders.",
+        "Support groups and therapy can be beneficial in addressing disordered eating behaviors.",
+        "Focus on developing a healthy relationship with food and your body."
+      ]
+    },
+    {
+      "tag": "body_image",
+      "patterns": [
+        "I'm unhappy with my body image",
+        "How can I improve my body image?",
+        "Dealing with negative body image",
+        "Help with body image issues",
+        "Body positivity tips"
+      ],
+      "responses": [
+        "Practice self-compassion and focus on your strengths rather than appearance.",
+        "Consider talking to a therapist about body image concerns and developing a positive self-image.",
+        "Engage in activities that make you feel good about yourself and build confidence."
+      ]
+    },
+    {
+      "tag": "anger_management",
+      "patterns": [
+        "I'm struggling with anger",
+        "How can I manage my anger?",
+        "Anger management techniques",
+        "Help with controlling anger",
+        "Dealing with anger issues"
+      ],
+      "responses": [
+        "Techniques such as deep breathing, taking a timeout, and physical exercise can help manage anger.",
+        "Consider seeking counseling to address the underlying causes of anger and develop coping strategies.",
+        "Practicing relaxation techniques and communicating calmly can also help control anger."
+      ]
+    },
+    {
+      "tag": "fear",
+      "patterns": [
+        "I'm afraid",
+        "How can I overcome my fears?",
+        "Dealing with fear and anxiety",
+        "Help with phobias",
+        "Managing fears"
+      ],
+      "responses": [
+        "Identify the source of your fear and consider facing it gradually to build confidence.",
+        "Therapy, particularly exposure therapy, can help in overcoming phobias and intense fears.",
+        "Practicing relaxation and coping techniques can also help manage fear and anxiety."
+      ]
+    },
+    {
+      "tag": "social_anxiety",
+      "patterns": [
+        "I have social anxiety",
+        "Help with social anxiety",
+        "Dealing with social fears",
+        "Tips for overcoming social anxiety",
+        "I feel anxious in social situations"
+      ],
+      "responses": [
+        "Gradual exposure to social situations and practicing relaxation techniques can help manage social anxiety.",
+        "Consider seeking therapy to develop coping strategies and address underlying issues.",
+        "Engaging in social skills training can also help build confidence in social interactions."
+      ]
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "I'm feeling stressed",
+        "How can I reduce stress?",
+        "Dealing with stress",
+        "Help with managing stress",
+        "Stress relief techniques"
+      ],
+      "responses": [
+        "Identify the sources of stress and find ways to address or manage them.",
+        "Techniques such as mindfulness, exercise, and relaxation can help reduce stress.",
+        "Consider speaking with a mental health professional for additional support and strategies."
+      ]
+    },
+    {
+      "tag": "mindset",
+      "patterns": [
+        "How can I change my mindset?",
+        "Improving my mindset",
+        "Tips for a positive mindset",
+        "Changing negative thoughts",
+        "Help with mindset issues"
+      ],
+      "responses": [
+        "Practice positive affirmations and focus on your strengths and achievements.",
+        "Consider cognitive restructuring techniques to challenge and change negative thoughts.",
+        "Engaging in activities that promote a positive outlook and self-growth can also help."
+      ]
+    },
+    {
+      "tag": "emotional_support",
+      "patterns": [
+        "I need emotional support",
+        "Can you support me emotionally?",
+        "I'm feeling emotionally drained",
+        "Help with emotional struggles",
+        "I need someone to talk to"
+      ],
+      "responses": [
+        "I'm here to listen. Feel free to share what you're going through.",
+        "Reaching out to friends, family, or a counselor can provide additional support.",
+        "Engaging in self-care activities and practicing mindfulness can also help."
+      ]
+    },
+    {
+      "tag": "self_improvement",
+      "patterns": [
+        "I want to improve myself",
+        "Self-improvement tips",
+        "How can I grow as a person?",
+        "Personal development",
+        "Help with self-improvement"
+      ],
+      "responses": [
+        "Set specific, achievable goals for personal growth and development.",
+        "Engage in activities that challenge you and expand your skills and knowledge.",
+        "Consider seeking feedback and support from mentors or peers to aid in your self-improvement journey."
+      ]
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can I improve my relationships?",
+        "Dealing with relationship issues",
+        "Help with relationship problems",
+        "Tips for better relationships",
+        "I need advice on relationships"
+      ],
+      "responses": [
+        "Effective communication and setting healthy boundaries are key to improving relationships.",
+        "Consider seeking couples counseling or relationship therapy for additional support.",
+        "Work on building trust and empathy to strengthen your relationships."
+      ]
+    },
+    {
+      "tag": "empathy",
+      "patterns": [
+        "What is empathy?",
+        "How can I be more empathetic?",
+        "Benefits of empathy",
+        "Empathy exercises",
+        "Understanding others better"
+      ],
+      "responses": [
+        "Empathy involves understanding and sharing the feelings of others.",
+        "Practice active listening and try to put yourself in others' shoes to develop empathy.",
+        "Empathy can enhance relationships and improve communication with others."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I lack motivation",
+        "How can I stay motivated?",
+        "Tips for increasing motivation",
+        "I'm struggling with motivation",
+        "Help with staying motivated"
+      ],
+      "responses": [
+        "Set small, achievable goals and reward yourself for reaching them.",
+        "Find activities or tasks that you are passionate about to boost motivation.",
+        "Consider developing a routine or schedule to help maintain motivation."
+      ]
+    },
+    {
+      "tag": "time_management",
+      "patterns": [
+        "How can I manage my time better?",
+        "Tips for effective time management",
+        "Struggling with time management",
+        "Help with managing my schedule",
+        "Improving time management skills"
+      ],
+      "responses": [
+        "Use tools like to-do lists and calendars to keep track of tasks and deadlines.",
+        "Prioritize tasks based on importance and deadlines, and set specific time blocks for each task.",
+        "Avoid multitasking and focus on completing one task at a time for better efficiency."
+      ]
+    },
+    {
+      "tag": "confidence",
+      "patterns": [
+        "How can I boost my confidence?",
+        "Building self-confidence",
+        "Tips for increasing confidence",
+        "Struggling with self-confidence",
+        "Help with improving confidence"
+      ],
+      "responses": [
+        "Practice positive self-talk and focus on your strengths and accomplishments.",
+        "Set small goals and celebrate your achievements to build confidence gradually.",
+        "Consider stepping out of your comfort zone to gain confidence through new experiences."
+      ]
+    },
+    {
+      "tag": "assertiveness",
+      "patterns": [
+        "How can I be more assertive?",
+        "Tips for assertiveness",
+        "Building assertiveness skills",
+        "Help with being assertive",
+        "Struggling with assertiveness"
+      ],
+      "responses": [
+        "Practice expressing your thoughts and feelings clearly and respectfully.",
+        "Set boundaries and stand up for yourself while respecting others' opinions.",
+        "Consider role-playing scenarios to build confidence in assertive communication."
+      ]
+    },
+    {
+      "tag": "communication_skills",
+      "patterns": [
+        "How can I improve my communication skills?",
+        "Tips for effective communication",
+        "Struggling with communication",
+        "Help with communication skills",
+        "Improving communication abilities"
+      ],
+      "responses": [
+        "Practice active listening and be mindful of non-verbal communication.",
+        "Seek feedback from others and work on areas that need improvement.",
+        "Engage in open and honest conversations to enhance your communication skills."
+      ]
+    },
+    {
+      "tag": "anger_management",
+      "patterns": [
+        "I'm struggling with anger",
+        "How can I manage my anger?",
+        "Anger management techniques",
+        "Help with controlling anger",
+        "Dealing with anger issues"
+      ],
+      "responses": [
+        "Techniques such as deep breathing, taking a timeout, and physical exercise can help manage anger.",
+        "Consider seeking counseling to address the underlying causes of anger and develop coping strategies.",
+        "Practicing relaxation techniques and communicating calmly can also help control anger."
+      ]
     }
   ]
 }
