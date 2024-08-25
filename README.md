@@ -7,9 +7,6 @@ HexDoc is an AI-powered chatbot designed to offer personalized stress relief exe
   • Utilized basic NLP techniques to understand user inputs and respond accordingly.
   • The chatbot interprets simple prompts related to stress levels, emotions, or mood.
 
-### Stress Relief Exercises:
-  • Simple exercises, such as guided breathing or relaxation techniques, based on user input.
-
 ### Motivational and Supportive Content:
   • Motivational quotes, short wellness tips, and access to mental health resources as needed.
 
@@ -35,6 +32,10 @@ cd hexdoc
 Clone the repository
 ```
 git clone https://https://github.com/lohithgsk/chatbot-rag.git
+```
+Installing dependencies
+```
+pip install -r requirements.txt
 ```
 ### Usage
 Start the flask application on your terminal

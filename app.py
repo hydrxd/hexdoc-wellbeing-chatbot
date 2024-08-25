@@ -91,6 +91,7 @@ def get_test_messages(title, score):
     score = int(score)
     message = ""
     if title.lower() == "depression test":  # depression test
+        score = (score * 9)
         if score > 20:
             message = "Depression Test: Severe Depression"
         elif score > 15:
@@ -107,6 +108,7 @@ def get_test_messages(title, score):
             + "/27 (Your responses indicate that you may be at risk of harming yourself. If you need immediate help, you can reach the mental health service by visiting this link: https://www.thelivelovelaughfoundation.org/find-help/helplines)"
         )
     elif title.lower() == "anxiety test":  # anxiety test
+        score *= 7
         if score > 15:
             message = "Anxiety Test: Severe Anxiety"
         elif score > 10:
