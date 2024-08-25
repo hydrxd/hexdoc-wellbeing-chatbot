@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles-test.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        
+        <div class="range-info">
+            <p>Please enter values between 0 and 27 for each question:</p>
+            <ul>
+                <li><strong>0-5:</strong> Tranquil State</li>
+                <li><strong>6-10:</strong> Slight Unease</li>
+                <li><strong>11-15:</strong> Noticeable Distress</li>
+                <li><strong>16-20:</strong> Significant Distress</li>
+                <li><strong>21-27:</strong> Intense Distress</li>
+            </ul>
+        </div>
+        
+        <form method="POST">
+            {% for question in questions %}
+                <div class="question">
+                    <label>{{ question['question'] }}</label>
+                    <input type="number" name="score_{{ loop.index }}" min="0" max="27" required>
+                </div>
+            {% endfor %}
+            <button type="submit">Submit</button>
+        </form>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
+

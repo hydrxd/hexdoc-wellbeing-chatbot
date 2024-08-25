@@ -1,0 +1,350 @@
+{
+  "tests": [
+    {
+      "title": "Depression Test",
+      "questions": [
+        {
+          "question": "How often do you feel like you have little interest or pleasure in doing things?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "How often do you feel down, depressed, or hopeless?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you often have trouble falling or staying asleep, or sleeping too much?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you feel tired or feel like you have little energy?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "How often do you find yourself eating too little or too much?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you ever feel bad about yourself - or that you are a failure or have let yourself or your family down?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you have trouble concentrating on things, such as reading the newspaper or watching television?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you find yourself moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you have thoughts that you would be better off dead, or of hurting yourself in some way?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Anxiety Test",
+      "questions": [
+        {
+          "question": "Do you regularly feeling nervous, anxious, or on edge?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Are you on a constant state of not being able to stop or control worrying?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you find yourself worrying too much about different things?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you have trouble relaxing?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Have you found yourself being so restless that it's hard to sit still?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Are you easily annoyed or irritable?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "question": "Do you feel afraid, as if something awful might happen?",
+          "options": [
+            {
+              "text": "Never",
+              "points": 0
+            },
+            {
+              "text": "Once in a while",
+              "points": 1
+            },
+            {
+              "text": "Often",
+              "points": 2
+            },
+            {
+              "text": "Almost everyday",
+              "points": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

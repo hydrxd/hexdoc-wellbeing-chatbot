@@ -7,7 +7,7 @@ from autocorrect import Speller
 from tensorflow.keras.models import load_model
 import json
 import random
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 lemmatizer = WordNetLemmatizer()
 model = load_model('model/chatbot_model.h5')
@@ -77,6 +77,66 @@ def get_bot_response():
     
     chatbot_response_text = chatbot_response(userText)
     return chatbot_response_text
+
+with open("tests.json") as file:
+    tests = json.load(file)
+
+def get_questions(title):
+    for test in tests["tests"]:
+        if test["title"] == title:
+            return test["questions"]
+    return "Test not found"
+
+def get_test_messages(title, score):
+    score = int(score)
+    message = ""
+    if title.lower() == "depression test":  # depression test
+        if score > 20:
+            message = "Depression Test: Severe Depression"
+        elif score > 15:
+            message = "Depression Test: Moderately Severe Depression"
+        elif score > 10:
+            message = "Depression Test: Moderate Depression"
+        elif score > 5:
+            message = "Depression Test: Mild Depression"
+        else:
+            message = "Depression Test: No Depression"
+        message += (
+            " - Score: "
+            + str(score)
+            + "/27 (Your responses indicate that you may be at risk of harming yourself. If you need immediate help, you can reach the mental health service by visiting this link: https://www.thelivelovelaughfoundation.org/find-help/helplines)"
+        )
+    elif title.lower() == "anxiety test":  # anxiety test
+        if score > 15:
+            message = "Anxiety Test: Severe Anxiety"
+        elif score > 10:
+            message = "Anxiety Test: Moderate Anxiety"
+        elif score > 5:
+            message = "Anxiety Test: Mild Anxiety"
+        else:
+            message = "Anxiety Test: No Anxiety"
+        message += " - Score: " + str(score) + "/21"
+    else:
+        message = "Test Title not found"
+    message += ". These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start!"
+    return message
+
+@app.route('/test')
+def index():
+    return render_template('test-home.html')
+
+@app.route('/test/<title>', methods=['GET', 'POST'])
+def test(title):
+    if request.method == 'POST':
+        score = request.form.get('score')
+        message = get_test_messages(title, score)
+        return render_template('result.html', title=title, score=score, message=message)
+    
+    questions = get_questions(title)
+    if questions == "Test not found":
+        return redirect(url_for('test-home'))
+    
+    return render_template('test.html', title=title, questions=questions)
 
 if __name__ == "__main__":
     app.run()
