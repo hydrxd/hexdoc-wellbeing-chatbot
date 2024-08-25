@@ -16,6 +16,12 @@ HexDoc is an AI-powered chatbot designed to offer personalized stress relief exe
 ### Conversational Flow:
   • Chatbot engages users in a calming, supportive conversation, offering a range of personalized options depending on the input received.
 
+### Depression Test and Analysis
+  - Evaluates depression symptoms using a structured questionnaire, providing a score to gauge the severity of symptoms.
+
+### Anxiety Test and Analysis
+  - Assesses anxiety levels through targeted questions, calculating a score to determine the intensity of anxiety symptoms.Delivers tailored feedback and coping strategies based on the results, with links to additional resources and professional support.
+
 # Project Installation 🚀
 
 ### Initialization
