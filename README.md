@@ -25,7 +25,7 @@ flask run
 ```
 The application would be up at ```https://localhost:5000```
 
-# About the model
+# About the model 🤖
 
 This is a feedforward neural network built using TensorFlow's Keras API for classifying user inputs into predefined categories or intents. Here's a brief description:
   - Input Layer: The model takes in a vector of length equal to the number of unique words in the training data (bag-of-words representation).
