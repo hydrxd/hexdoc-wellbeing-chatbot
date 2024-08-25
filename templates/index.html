@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Psychiatrist Bot</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='img/mhcicon.png') }}"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="chatbot">
+      <div id="chatbot-profile" class="chatbot-profile">
+        <img
+          src="{{ url_for('static', filename='images/chatbot.png') }}"
+          id="chatbot-image"
+          class="rounded-circle border border-secondary my-4 mx-auto d-block"
+          style="width: 100px; height: 100px"
+        />
+        <div class="container d-grid gap-3 px-5">
+          <h3 class="text-center">HexDoc</h3>
+        </div>
+      </div>
+
+      <div class="chat-area">
+        <main id="main-chat" class="main-chat chat-history">
+          <!-- Chat messages will be appended here -->
+        </main>
+        <form id="messageForm" class="chat-inputarea">
+          <input
+            type="text"
+            id="messageInput"
+            class="chat-input"
+            placeholder="Enter your message..."
+            autocomplete="off"
+          />
+          <button type="submit" class="btn btn-outline-info">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        const chatHistory = $(".chat-history");
+        const messageInput = $("#messageInput");
+        const messageForm = $("#messageForm");
+
+        function formatDate(date) {
+          const h = String(date.getHours()).padStart(2, "0");
+          const m = String(date.getMinutes()).padStart(2, "0");
+          return `${h}:${m}`;
+        }
+
+        function appendMessage(side, text) {
+          const timestamp = formatDate(new Date());
+          const imgSrc =
+            side === "right"
+              ? "{{ url_for('static', filename='images/person.png') }}"
+              : "{{ url_for('static', filename='images/chatbot.png') }}";
+          const msgHTML = `
+          <div class="msg ${side}-msg">
+            <div class="msg-img" style="background-image: url(${imgSrc})"></div>
+            <div class="msg-bubble">
+              <div class="chat-info">
+                <div class="chat-info-time">${timestamp}</div>
+              </div>
+              <div class="chat-text">${text}</div>
+            </div>
+          </div>
+        `;
+          chatHistory.append(msgHTML);
+          chatHistory.scrollTop(chatHistory.prop("scrollHeight"));
+        }
+
+        messageForm.submit(function (event) {
+          event.preventDefault();
+          const userMessage = messageInput.val().trim();
+          if (!userMessage) return;
+
+          appendMessage("right", userMessage);
+          messageInput.val("");
+
+          $.get("/get", { msg: userMessage })
+            .done(function (response) {
+              appendMessage("left", response);
+            })
+            .fail(function () {
+              appendMessage(
+                "left",
+                "Sorry, there was an error processing your request."
+              );
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
