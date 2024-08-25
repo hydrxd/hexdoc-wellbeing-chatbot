@@ -33,6 +33,10 @@ Clone the repository
 ```
 git clone https://https://github.com/lohithgsk/chatbot-rag.git
 ```
+Installing dependencies
+```
+pip install -r requirements.txt
+```
 ### Usage
 Start the flask application on your terminal
 ```python
