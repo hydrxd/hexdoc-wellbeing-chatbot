@@ -88,7 +88,7 @@ def get_questions(title):
     return "Test not found"
 
 def get_test_messages(title, score):
-    score = int(score)
+    score = score
     message = ""
     if title.lower() == "depression test":  # depression test
         if score > 20:

@@ -20,7 +20,7 @@ classes = []
 documents = []
 ignore_words = ['?', '!']
 
-with open('Dataset.json') as file:
+with open('Dataset\Dataset.json') as file:
     intents = json.load(file)
 
 for intent in intents['intents']:
