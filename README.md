@@ -56,6 +56,28 @@ This is a feedforward neural network built using TensorFlow's Keras API for clas
 
 This architecture is designed to classify input text into specific categories, such as different types of user intents, by learning from labeled training data.
 
+# Application 
+Home page of the application <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/chatbot-home.jpg)
+
+Chatting interface <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/chatbot-action.jpg)
+
+Mental health test - home page <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/test-home.png)
+
+Depression Test <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/depressiontest.png)
+
+Depression Test Result <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/depressiontest-result.png)
+
+Anxiety Test<br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/anxiety-test.png)
+
+Anxiety Test Result <br><br>
+![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/anxiety-test-result.png)
+
 # Feedback
 If you have any feedback you can reach out to us.
 
