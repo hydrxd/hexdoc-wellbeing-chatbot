@@ -1,107 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/chatbot-rag/static/styles/styles-test.css">
-</head>
-<style>
+    <link rel="stylesheet" href="/chatbot-rag/static/styles/styles-test.css" />
+  </head>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
-    
-    .container {
-        width: 80%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1 {
-        color: #333;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    ul li {
-        margin: 10px 0;
-    }
-    
-    a {
-        color: #007BFF;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        text-decoration: underline;
-    }
-    
-    .question {
-        margin-bottom: 15px;
-    }
-    
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    input[type="number"] {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    
-    button {
-        background-color: #007BFF;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
-    
-</style>
-<body>
-    <div class="container">
-        <h1>{{ title }}</h1>
-        
-        <div class="range-info">
-            <p>Please enter values between 0 and 27 for each question:</p>
-            <ul>
-                <li><strong>0-5:</strong> Tranquil State</li>
-                <li><strong>6-10:</strong> Slight Unease</li>
-                <li><strong>11-15:</strong> Noticeable Distress</li>
-                <li><strong>16-20:</strong> Significant Distress</li>
-                <li><strong>21-27:</strong> Intense Distress</li>
-            </ul>
-        </div>
-        
-        <form method="POST">
-            {% for question in questions %}
-                <div class="question">
-                    <label>{{ question['question'] }}</label>
-                    <input type="number" name="score" min="0" max="27" required>
-                </div>
-            {% endfor %}
-            <button type="submit">Submit</button>
-        </form>
-        <a href="">Back to Home</a>
-    </div>
-</body>
-</html>
 
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .question {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>{{ title }}</h1>
+
+      <div class="range-info">
+        <p>Please enter values between 0 and 27 for each question:</p>
+        <ul>
+          <li><strong>0-5:</strong> Tranquil State</li>
+          <li><strong>6-10:</strong> Slight Unease</li>
+          <li><strong>11-15:</strong> Noticeable Distress</li>
+          <li><strong>16-20:</strong> Significant Distress</li>
+          <li><strong>21-27:</strong> Intense Distress</li>
+        </ul>
+      </div>
+
+      <form method="POST">
+        {% for question in questions %}
+        <div class="question">
+          <label>{{ question['question'] }}</label>
+          <input type="number" name="score" min="0" max="27" required />
+        </div>
+        {% endfor %}
+        <button type="submit">Submit</button>
+      </form>
+      <a href="/test">Back to Home</a>
+    </div>
+  </body>
+</html>

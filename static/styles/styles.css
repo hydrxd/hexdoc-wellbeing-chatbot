@@ -13,13 +13,13 @@ html {
 .chatbot {
   width: 85vw;
   max-width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 60px; /* Add this line to move the chatbox down */
+  margin-top: 20px; /* Add this line to move the chatbox down */
 }
 
 .chatbot-profile {
