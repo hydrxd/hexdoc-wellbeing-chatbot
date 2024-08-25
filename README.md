@@ -44,8 +44,6 @@ flask run
 ```
 The application would be up at ```https://localhost:5000```
 
-# Running the model
-
 # About the model 🤖
 
 This is a feedforward neural network built using TensorFlow's Keras API for classifying user inputs into predefined categories or intents. Here's a brief description:
