@@ -1,7 +1,7 @@
 # HexDoc 
 HexDoc is an AI-powered chatbot designed to offer personalized stress relief exercises and mental wellness resources. Utilizing basic Natural Language Processing (NLP), HexDoc interprets user inputs related to mood and stress levels to provide tailored recommendations. The chatbot ensures ease of interaction and engages users in a calming, supportive conversation, helping them manage stress effectively.
 
-# Functionalities
+# Functionalities 📃
 
 ### Natural Language Processing (NLP):
   • Utilized basic NLP techniques to understand user inputs and respond accordingly.
