@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles-test.css') }}">
-</head>
-<style>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles-test.css') }}"
+    />
+  </head>
+  <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f0f4f8;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+      font-family: "Arial", sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .container {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        padding: 40px;
-        text-align: center;
-        max-width: 400px;
-        width: 100%;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
     }
     h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #007BFF;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #007bff;
     }
     p {
-        font-size: 16px;
-        margin-bottom: 30px;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
     ul {
-        list-style: none;
-        padding: 0;
+      list-style: none;
+      padding: 0;
     }
     li {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
     a {
-        text-decoration: none;
-        background-color: #007BFF;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        display: inline-block;
-        font-size: 16px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      display: inline-block;
+      font-size: 16px;
     }
     a:hover {
-        background-color: #0056b3;
+      background-color: #0056b3;
     }
-</style>
-<body>
+  </style>
+  <body>
     <div class="container">
-        <h1>{{ title }} - Result</h1>
-        <p>Your score: {{ score }}</p>
-        <p>{{ message }}</p>
-        <a href="{{ url_for('index') }}">Back to Home</a>
+      <h1>{{ title }} - Result</h1>
+      <p>Your score: 18</p>
+      <p>{{ message }}</p>
+      <a href="/test">Back to Home</a>
     </div>
-</body>
+  </body>
 </html>
