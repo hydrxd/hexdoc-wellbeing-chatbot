@@ -1039,7 +1039,10 @@
     },
     {
       "tag": "what is the 3 3 3 rule for anxiety?",
-      "patterns": ["what is the 3 3 3 rule for anxiety?"],
+      "patterns": [
+        "what is the 3 3 3 rule for anxiety?",
+        "how to manage anxiety"
+      ],
       "responses": [
         "there's an\u00a0anxiety-reducing technique called grounding. there are different versions of this, but an easy one to remember is the\u00a03-3-3 rule. mentally note\u00a0three\u00a0things you see,\u00a0three\u00a0sounds you hear, and then move\u00a0three\u00a0parts of your body. this exercise can help your mind refocus on something else."
       ]
@@ -1060,7 +1063,10 @@
     },
     {
       "tag": "how can we reduce anxiety?",
-      "patterns": ["how can we reduce anxiety?"],
+      "patterns": [
+        "how can we reduce anxiety?",
+        "suggest some excersie to reduce anxiety"
+      ],
       "responses": [
         "3 3 3 rule is the best method to reduce anxiety.in this method you have to mentally note\u00a0three\u00a0things you see,\u00a0three\u00a0sounds you hear, and then move\u00a0three\u00a0parts of your body. this exercise can help your mind refocus on something else."
       ]
@@ -1207,7 +1213,11 @@
     },
     {
       "tag": "i am feeling anxious lately.",
-      "patterns": ["i am feeling anxious lately."],
+      "patterns": [
+        "i am feeling anxious lately.",
+        "suggest some exercise to reduce anxiety",
+        "ways to reduce anxiety"
+      ],
       "responses": [
         "i have heard that 3 3 3 rule is the best method to reduce anxiety.in this method you have to mentally note\u00a0three\u00a0things you see,\u00a0three\u00a0sounds you hear, and then move\u00a0three\u00a0parts of your body.this exercise can help your mind refocus on something else.give this method a try i am sure it will help you"
       ]
