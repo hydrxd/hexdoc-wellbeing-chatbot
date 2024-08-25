@@ -1,4 +1,4 @@
-# HexDoc 
+# HexDoc 🩺
 HexDoc is an AI-powered chatbot designed to offer personalized stress relief exercises and mental wellness resources. Utilizing basic Natural Language Processing (NLP), HexDoc interprets user inputs related to mood and stress levels to provide tailored recommendations. The chatbot ensures ease of interaction and engages users in a calming, supportive conversation, helping them manage stress effectively.
 
 # Functionalities 📃
@@ -55,7 +55,7 @@ This is a feedforward neural network built using TensorFlow's Keras API for clas
 
 This architecture is designed to classify input text into specific categories, such as different types of user intents, by learning from labeled training data.
 
-# Project Screenshots
+# Project Screenshots 📸
 Home page of the application <br><br>
 ![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/chatbot-home.jpg)
 
@@ -77,7 +77,7 @@ Anxiety Test<br><br>
 Anxiety Test Result <br><br>
 ![chatbot](https://github.com/lohithgsk/chatbot-rag/blob/main/static/images/anxiety-test-result.png)
 
-# Feedback
+# Feedback 💬
 If you have any feedback you can reach out to us.
 
 
