@@ -37,7 +37,7 @@ cd hexdoc
 ### Installation
 Clone the repository
 ```
-git clone https://https://github.com/lohithgsk/chatbot-rag.git
+git clone https://https://github.com/hydrxd/hexdoc-wellbeing-chatbot.git
 ```
 Installing dependencies
 ```
